@@ -1,9 +1,7 @@
-#CMPE132 Frequency Analysis program
+#Monoalphabetic Cipher Frequency Analysis program
 #Author: Sowmya Bijjala
-#Find out the number of occurances of each letter, compare that with frequent english letters
+#Find out the number of occurances of each letter, compare that with frequent english letters to find out the key
 
-freq = []
-freq2 = []
 order = ["E","T",'A','O','I','N','S','H','R','D','L','U','C','M','W','F','Y','G','P','V','K','X','J','Q','Z']
 ciphertext = ""
 ciphertext2 = ""
@@ -15,7 +13,7 @@ def calc_Freq(p,f):
 		count = p.count(c)
 		f.append((c,count))
 
-def convert_o2(p): #deciphers o2.txt 
+def convert_o2(p): #deciphers input.txt 
 	p = p.replace("f","E")
 	p = p.replace("i","T")
 	p = p.replace("z","H")
